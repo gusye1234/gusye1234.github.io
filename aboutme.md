@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About me
+subtitle: not the cat
 cover-img: /assets/img/me.jpg
 share-img: /assets/img/me.jpg
 ---
