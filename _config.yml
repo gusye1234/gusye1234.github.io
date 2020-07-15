@@ -85,7 +85,7 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#00FFFF"
+navbar-col: "#FF8C00"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#2C2F33"
 page-col: "#2C2F33"
@@ -175,7 +175,7 @@ timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 10
 
 kramdown:
   input: GFM
