@@ -10,6 +10,8 @@ comments: true
 
 ## continuous-time  filter
 
+[my thing](../assets/html/2020-07-15-continuous-time_kalman_filter.html)
+
 考虑:
 
 * continuous process: $\dot{x_t} = Ax_t + B(u_t + \epsilon_t)$
