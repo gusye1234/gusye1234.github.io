@@ -41,9 +41,9 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
- email: "jianbaiye AT outlook DOT com"
+  email: "jianbaiye AT outlook DOT com"
  # facebook: deanattali
-  github: gusye1234
+  github: "gusye1234"
   # twitter: EliteDaMyth
   # rss: true
   # reddit: EliteDaMyth
