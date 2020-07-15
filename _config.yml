@@ -18,6 +18,9 @@ navbar-links:
   Repos:
     - lightGCN: "https://github.com/gusye1234/LightGCN-PyTorch"
     - torchtrace: "https://github.com/gusye1234/PyTrace"
+  resume:
+    - en: "assets/pdf/jianbai-ye.pdf"
+    - 中: "assets/pdf/jianbai-ye-zh.pdf"
   
 #  Author's home: "https://elitedamyth.github.io"
 
