@@ -85,15 +85,17 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#7289DA"
+navbar-col: "#00FFFF"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#2C2F33"
 page-col: "#2C2F33"
 link-col: "#3e70dd"
+text-col: "#FFFFFF"
 hover-col: "#99AAB5"
 footer-col: "#23272A"
-footer-text-col: "#7289DA"
-footer-link-col: "#7289DA"
+footer-text-col: "#00FFFF"
+footer-link-col: "#00FFFF"
+# footer-link-col: "#7289DA"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -133,11 +135,11 @@ footer-link-col: "#7289DA"
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
-# utterances:
-#   repository: "elitedamyth/elitedamythxyz-comments" # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#   issue-term: title   # Mapping between blog posts and GitHub issues
-#   theme: github-dark # Utterances theme
-#   label: comments # Label that will be assigned to GitHub Issues created by Utterances
+utterances:
+  repository: "gusye1234/comments" # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  issue-term: title   # Mapping between blog posts and GitHub issues
+  theme: github-dark # Utterances theme
+  label: comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
 # accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`.
