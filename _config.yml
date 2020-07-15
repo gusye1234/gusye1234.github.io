@@ -148,7 +148,7 @@ footer-link-col: "#404040"
 utterances:
   repository: "gusye1234/comments" # GitHub username/repository eg. "daattali/beautiful-jekyll"
   issue-term: title   # Mapping between blog posts and GitHub issues
-  theme: github-dark # Utterances theme
+  theme: github-light # Utterances theme
   label: comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
