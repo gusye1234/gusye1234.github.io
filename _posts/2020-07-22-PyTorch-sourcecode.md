@@ -52,4 +52,4 @@ Highly recommend vscode under our scenario: Reading source code . Since no modif
 
 (*Just want to be able to understand what the fuck is going on in `CMakeLists.txt`*)
 
-refer to this [blog](../2020-07-23-fast-dive-into-cmake.md) 
+refer to this [blog](../2020-07-23-fast-dive-into-cmake) 
