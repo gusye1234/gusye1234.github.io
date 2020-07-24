@@ -5,7 +5,7 @@ subtitle: A reading note for pytorch source code
 thumbnail-img: /assets/img/pytorch-logo.png
 cover-img: /assets/img/pytorch-logo-dark.png
 share-img: /assets/img/pytorch-logo-dark.png
-tags: [ note ]
+tags: [ note, pytorch, code]
 comments: true
 ---
 
