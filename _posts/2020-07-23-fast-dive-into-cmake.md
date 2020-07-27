@@ -5,9 +5,8 @@ subtitle: keep it easy, simple, and cool
 tags: [ note, code ]
 comments: true
 ---
-All the source code can be found [here](https://github.com/ttroy50/cmake-examples)
 
-
+The finally goal of this blog is to, make you understand which is going on in `CMakeLists.txt`, which I believe everyone has encountered, or will encounter, if one plans to read a big project's source code.
 
 ## 0x00 basic
 
@@ -56,4 +55,65 @@ And, the familiar macro command `include` shows up.
 >  There are more rules about how to write header, adding `#define` to avoid being included by a file more than once, ...
 
 ## 0x01 make
+
+**It's all about automated**
+
+When our C/CPP project grows bigger and bigger, it's low efficient to manually typing `clang` about everything, we need a "robot", and that's `make` and its rule: `makefile`. 
+
+We know that, `pre-compile -> compile(separate compilation) -> assembly -> link` is the process, or to say,`   .cpp -> .o -> binary executable`.    
+
+The finally executable depends on the object file, and the object files depend on the source file, and we can use some certain commands to depict such dependency, for example:
+
+```makefile
+add: main.o
+    g++ -o add.exe main.o
+main.o: main.cpp
+    g++ -c -o main.o main.cpp
+```
+
+That's `makefile`, always about
+
+1. target
+2. prerequisites
+3. command
+
+The general form of a `makefile` can be stacked by the block like:
+
+```makefile
+target: prerequisites
+	command # Tab
+	command # Tab
+```
+
+If we have a `makefile` under the current folder, we just run `make` to get what we want. (If you have more need about this part, actually there is a website called [makefiletutorial](https://makefiletutorial.com), have fun!)
+
+## 0x02 cmake
+
+*All the source code can be found [here](https://github.com/ttroy50/cmake-examples)*
+
+So…, actually `make` is not automated enough, we need a tool to generate `makefile`. 😛
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
