@@ -89,11 +89,11 @@ If we have a `makefile` under the current folder, we just run `make` to get what
 
 ## 0x02 cmake
 
-*All the source code can be found [here](https://github.com/ttroy50/cmake-examples)*
+*All the source code can be found [here](https://github.com/ttroy50/cmake-examples)*, get your hands dirty.
 
 So…, actually `make` is not automated enough, we need a tool to generate `makefile`. 😛
 
-
+More [example](http://derekmolloy.ie/hello-world-introductions-to-cmake/).
 
 
 
