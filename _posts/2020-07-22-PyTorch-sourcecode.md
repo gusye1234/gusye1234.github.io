@@ -13,7 +13,7 @@ comments: true
 
 ## Preparation
 
-1. Download the code 
+* Download the code 
 
 go to the [repo](https://github.com/pytorch/pytorch/tree/release/1.5) of `pytorch` , choose a branch, I chose ``master/1.7`. And 
 
@@ -21,12 +21,13 @@ go to the [repo](https://github.com/pytorch/pytorch/tree/release/1.5) of `pytorc
 git clone git@github.com:pytorch/pytorch.git
 ```
 
-2. find a great editor
+* find a great editor
 
-Highly recommend vscode under our scenario: Reading source code . Since no modification required, we actually want our editor to be fast and code-navigation-supported.
+Highly recommend vscode under our scenario: Reading source code . Since no modification required, we actually only want our editor to be fast and code-navigation-supported.
 
-3. Have a look at this [sildes](http://blog.ezyang.com/2019/05/pytorch-internals/), get some abstracts from the developer in NYC
-4. [internals 1](https://pytorch.org/blog/a-tour-of-pytorch-internals-1/), [internals 2](https://pytorch.org/blog/a-tour-of-pytorch-internals-2/), [summary 1](https://www.miracleyoo.com/2019/12/11/Pytorch-Core-Code-Research/), [summary 2](http://blog.christianperone.com/2018/03/pytorch-internal-architecture-tour/)
+* Have a look at this [sildes](http://blog.ezyang.com/2019/05/pytorch-internals/), get some abstracts from the developer in NYC
+
+* [internals 1](https://pytorch.org/blog/a-tour-of-pytorch-internals-1/), [internals 2](https://pytorch.org/blog/a-tour-of-pytorch-internals-2/), [summary 1](https://www.miracleyoo.com/2019/12/11/Pytorch-Core-Code-Research/), [summary 2](http://blog.christianperone.com/2018/03/pytorch-internal-architecture-tour/)
 
 
 
@@ -196,7 +197,7 @@ Ok, Let's get those slowly
     set(ATen_CPU_SRCS ${all_cpu_cpp})
     ```
 
-    I won't expand all those *_cpp variable means, or maybe later
+    You can almost find a corresponding overview of the files in `all_cpu_cpp` in `CONTRIBUTING.md`
 
   * `shm`, located in `torch/lib/libshm`. Won't go further
 
