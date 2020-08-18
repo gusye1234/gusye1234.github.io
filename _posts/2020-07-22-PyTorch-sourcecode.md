@@ -227,5 +227,62 @@ PyMODINIT_FUNC PyInit__C(void)
 
 
 
-  
+ 
 
+
+
+
+
+
+
+## Python torch
+
+
+
+### Module init
+
+When you claim a class like this
+
+```python
+class see(Module):
+	def __init__(self):
+		self.f1 = nn.Linear(10,20)
+```
+
+And run `see()`, you will get an error
+
+> AttributeError: cannot assign module before Module.__init__() call
+
+The reason is `torch` need to set up something in the `Module.__init__`, before that, any parameters and sub module like `Linear`, `conv` should not be assgined. So, we need to add `super()__init__()` to the first line.  `torch` using the `__setattr__` to check such assignments. Go check the `torch/nn/modules/module.py`, in the `__init__`
+
+```python
+def __init__(self):
+        """
+        Initializes internal Module state, shared by both nn.Module and ScriptModule.
+        """
+        torch._C._log_api_usage_once("python.nn_module")
+
+        self.training = True
+        self._parameters = OrderedDict()
+        self._buffers = OrderedDict()
+        self._backward_hooks = OrderedDict()
+        self._forward_hooks = OrderedDict()
+        self._forward_pre_hooks = OrderedDict()
+        self._state_dict_hooks = OrderedDict()
+        self._load_state_dict_pre_hooks = OrderedDict()
+        self._modules = OrderedDict()
+```
+
+That name of them pretty much said anything. We go to the `__setattr__`, and find the control flow of the problem
+
+```python
+modules = self.__dict__.get('_modules')
+if isinstance(value, Module):
+  if modules is None:
+    raise AttributeError(
+      "cannot assign module before Module.__init__() call")
+    remove_from(self.__dict__, self._parameters, self._buffers)
+    modules[name] = value
+```
+
+That's it, if `Module.__init__` haven't being used, `_modules` will not in the `__dict__`.
