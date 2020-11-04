@@ -3,8 +3,8 @@ layout: post
 title: More on terminal
 subtitle: A easy way to beautify your terminal
 thumbnail-img: /assets/img/202011/terminal.png
-cover-img: /assets/img/202011/total1.png
-share-img: /assets/img/202011/total1.png
+cover-img: /assets/img/202011/head.png
+share-img: /assets/img/202011/head.png
 tags: [ note, terminal]
 comments: false
 ---
