@@ -2,7 +2,7 @@
 layout: post
 title: More on terminal
 subtitle: A easy way to beautify your terminal
-thumbnail-img: /assets/img/terminal.png
+thumbnail-img: /assets/img/202011/terminal.png
 cover-img: /assets/img/202011/total1.png
 share-img: /assets/img/202011/total1.png
 tags: [ note, terminal]
