@@ -1,10 +1,10 @@
 ---
 layout: post
-title: PyTorch
-subtitle: A reading note for pytorch source code 
-thumbnail-img: /assets/img/pytorch-logo.png
-cover-img: /assets/img/202011/1.png
-share-img: /assets/img/202011/1.png
+title: More on terminal
+subtitle: A easy way to beautify your terminal
+thumbnail-img: /assets/img/terminal.png
+cover-img: /assets/img/202011/total1.png
+share-img: /assets/img/202011/total1.png
 tags: [ note, terminal]
 comments: false
 ---
