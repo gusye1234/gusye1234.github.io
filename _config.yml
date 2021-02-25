@@ -17,7 +17,8 @@ navbar-links:
     - lightGCN: https://arxiv.org/abs/2002.02126
   Repos:
     - lightGCN: "https://github.com/gusye1234/LightGCN-PyTorch"
-    - torchtrace: "https://github.com/gusye1234/PyTrace"
+    - torchtrace: "https://github.com/gusye1234/torchtrace"
+    - PRank: "https://github.com/gusye1234/PRank"
   resume:
     - en: "assets/pdf/jianbai-ye.pdf"
     - 中: "assets/pdf/jianbai-ye-zh.pdf"
