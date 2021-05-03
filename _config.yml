@@ -12,7 +12,7 @@ author: Jianbai(Gus) Ye
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "2020-07-15-aboutme"
+  About Me: "https://www.notion.so/About-me-348ebd2a89c34a3ca5dae9ee8e391424"
   research: 
     - lightGCN: https://arxiv.org/abs/2002.02126
   Repos:
